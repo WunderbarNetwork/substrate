@@ -56,7 +56,8 @@ pub(super) type ItemTipOf<T, I = ()> = ItemTip<
 	<T as SystemConfig>::AccountId,
 	BalanceOf<T, I>,
 >;
-pub(super) type CollectionConfigFor<T, I = ()> = CollectionConfig<
+
+pub type CollectionConfigFor<T, I = ()> = CollectionConfig<
 	BalanceOf<T, I>,
 	<T as SystemConfig>::BlockNumber,
 	<T as Config<I>>::CollectionId,

@@ -60,7 +60,7 @@ pub use pallet::*;
 pub use types::*;
 pub use weights::WeightInfo;
 
-type AccountIdLookupOf<T> = <<T as SystemConfig>::Lookup as StaticLookup>::Source;
+pub type AccountIdLookupOf<T> = <<T as SystemConfig>::Lookup as StaticLookup>::Source;
 
 #[frame_support::pallet]
 pub mod pallet {
